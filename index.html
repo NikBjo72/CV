@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"> defer</script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Niklas Björks CV</title>
 </head>
+
 <body>
-    
+    <div class="row gx-0">
+        <div id="sideBar" class="col-sm-4">
+            <div class="flex-shrink-0 p-3 bg-black">
+                <img src="assets/halvbild-niklas-250x250px.png" id="profileImage" class="img-fluid"
+                    alt="Bild på Niklas Björk">
+                <div class="fs-2 fw-semibold text-white" id="profileName">Niklas Björk</div>
+            </div>
+            <div class="flex-shrink-0 p-3 bg-black">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#start-collapse" aria-expanded="true">
+                            Start
+                        </button>
+                        <div class="collapse show" id="start-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#introText" class="link-dark rounded text-white" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="introText">Jag som person</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Personuppgifter</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#education-collapse" aria-expanded="false">
+                            Utbildningar och kurser
+                        </button>
+                        <div class="collapse" id="education-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Utbildningar</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Kurser</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#gradeCert-collapse" aria-expanded="false">
+                            Betyg eller intyg
+                        </button>
+                        <div class="collapse" id="gradeCert-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Skolbetyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsbetyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsintyg</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#references-collapse" aria-expanded="false">
+                            Referenser
+                        </button>
+                        <div class="collapse" id="references-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Personliga referenser</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsprover</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#access-collapse" aria-expanded="false">
+                            Dokumentåtkomst
+                        </button>
+                        <div class="collapse" id="access-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Lås upp betyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Lås upp referenser</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="rightSide" class="col-sm">
+            <div class="col-sm">
+                <div class="row gx-0 flex-nowrap justify-content-center">
+                    <div id="characterImageBox" class="col card bg-dark text-white">
+                        <img id="characterImage" src="assets/stark-188x150px.png" style="width:100%" alt="Fjäril lyfter kedja">
+                        <div class="card-img-overlay">
+                            <h5>STARK</h5>
+                        </div>
+                    </div>
+                    <div id="characterImageBox" class="col">
+                        <img id="characterImage" src="assets/effektiv-188x150px.png" style="width:100%" alt="Renar springer">
+                    </div>
+                    <div id="characterImageBox" class="col">
+                        <img id="characterImage" src="assets/hjalpsam-188x150px.png" style="width:100%" alt="Handgrepp två händer">
+                    </div>
+                    <div id="characterImageBox" class="col">
+                        <img id="characterImage" src="assets/gransoverskridande-188x150px.png" style="width:100%" alt="Jordglob">
+                    </div>
+                    <div id="characterImageBox" class="col">
+                        <img id="characterImage" src="assets/lagspelare-188x150px.png" style="width:100%" alt="Kugghjul">  
+                    </div>
+                </div>
+                <div class="row gx-0">
+                    <div id="introText" class="col-sm collapse multi-collapse">
+                        <h5>
+                            Söker du efter en en teknisk, kreativ, noggrann och orädd problemlösare som kan mycket men
+                            vill
+                            mer?
+                            En positiv och utåtriktad person, någon som är lätt att prata med och trygg i sig själv?
+                            Då föreslår jag att du fortsätter läsa lite till!
+                        </h5>
+                        <p class="lead">
+                            Kreativitet är en stor del av min personlighet. Jag tar till mig omvärldens många intryck
+                            och
+                            former och
+                            använder det sedan i kreativa processer, oavsett om det är formgivning, marknadsföring,
+                            försäljning,
+                            ledarskap eller att utveckla spännande tekniska lösningar.
+                            Jag har lätt att ta till mig råd och lyssnar därför mycket på andra och vill alltid arbeta
+                            utifrån en öppen dialog.
+                            En bra egenskap är att jag lätt ser logiken i olika sammanhang, vilket hjälper mig vid både
+                            problemlösning
+                            och flödeshantering.
+                            Jag är kvalitetsmedveten, praktiskt lagd och mycket tekniskt kunnig. Lägger ned mycket
+                            energi på
+                            det jag gör
+                            samt jobbar noggrant och strukturerat. Jag är stresstålig, kan hantera många projekt
+                            samtidigt
+                            och trivs med
+                            att ha ansvar. Andra människors reaktioner på det jag gör är det som driver mig, därför är
+                            jag
+                            noga med att
+                            det ska vara bra och rätt. Jag är självgående och jobbar bra på egen hand men uppskattar
+                            mycket
+                            att fungera
+                            i grupp. Jag vill hela tiden ta till mig ny kunskap och aldrig sluta utvecklas!
+                            Jag har mycket arbetserfarenhet av att jobba med kommunikation och medier av olika slag.
+                            Kommunikation, vare sig den är digital eller klassiskt analog, handlar i båda fallen om att
+                            förstå mottagaren.
+                            När det gäller försäljning är min utgångspunkt alltid att hjälpa kunden. Jag tror nämligen
+                            att
+                            förtroendet är
+                            den absolut viktigaste kundrelationen. Förtroende leder till affärer.
+                            Ny teknik är och har alltid varit en stor passion! Allt ifrån att ”mecka” med hårdvara till
+                            att
+                            hitta användarvänliga
+                            och innovativa tekniska mjukvarulösningar. Koppla ihop olika system för att därigenom hitta
+                            enklare
+                            och bättre arbetssätt.
+                            Kreativ och insiktsfull kommunikation är också något som jag brinner för.
+                            Det gäller att kunna visualisera, se saker tydligt, förmedla budskap på enkla och trevliga
+                            sätt.
+                            Att förstå behov
+                            och därifrån hitta fungerande koncept och processer. När kommunikationen berör och skapar en
+                            positiv
+                            känsla, så ger det resultat!
+                            Jag förstår självklart att jag inte kan allt, men något jag absolut vet är, att skulle jag
+                            få
+                            chansen så kommer jag
+                            med stor iver anta alla arbetsutmaningar jag ställs inför och tillsammans med kollegor
+                            genomföra
+                            många
+                            spännande, bra och lönsamma affärer!
+                            Detta var en liten sammanfattning av mig som person, och...
+                            ...jag ser fram emot att få träffa er personligen!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
