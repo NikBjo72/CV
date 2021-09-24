@@ -74,8 +74,16 @@ display: none;
   transform-origin: .5em 50%;
 }
 
-.btn-toggle[aria-expanded="true"]::before{
-  transform: rotate(90deg);
+/*.dropdown-toggle { outline: 0; }
+
+.btn-toggle[aria-expanded="true"] {
+    color: red;
+}*/
+
+
+
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
 }
 
 .btn-toggle-nav a {
