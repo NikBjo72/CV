@@ -5,16 +5,21 @@
     border-radius: 50%;
     border: solid 2px white;
 }
-  
-#profileName{
-    text-align: left;
-}  
+
+#profileContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
 
 .col-sm{
-    /*border: solid 1px black;*/
+    background-color: rgb(199, 199, 199);
 }
 .row{
-    /*border: solid 1px black;*/
+    background-color: rgb(255, 170, 170);
 }
 .text{
     padding: 3rem;
@@ -39,9 +44,6 @@ h5{
 
 .card-img-overlay{
 display: none;
-}
-.italic{
-    text
 }
 
 .nav-flush .nav-link {
@@ -91,11 +93,6 @@ display: none;
 
     #sideBar{
         max-width: 280px;
-    }
-
-    #profileName{
-        text-align: center;
-
     }
 
     .card-img-overlay{
