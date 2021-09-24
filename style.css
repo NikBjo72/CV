@@ -8,6 +8,9 @@
     background-color: rgb(255, 170, 170);
 }*/
 
+.sideBar{
+    justify-content: center;
+}
 #profileImage{
     border-radius: 50%;
     border: solid 2px white;
