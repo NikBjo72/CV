@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"> defer</script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Niklas Björks CV</title>
+</head>
+
+<body>
+    <div class="content row gx-0">
+
+        <!-- Sidebar navigation-->
+        <div id="sideBar" class="col-sm-4">
+            <div class="flex-shrink-0 p-3 bg-black">
+                <img src="assets/halvbild-niklas-250x250px.png" id="profileImage" class="img-fluid"
+                    alt="Bild på Niklas Björk">
+                <div class="fs-2 fw-semibold text-white" id="profileName">Niklas Björk</div>
+            </div>
+            <div class="flex-shrink-0 p-3 bg-black">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#start-collapse" aria-expanded="false">
+                            Start
+                        </button>
+                        <div class="collapse show" id="start-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="index.html" class="link-dark rounded text-white">Jag som person</a></li>
+                                <li><a href="info.html" class="link-dark rounded text-white">Mina personuppgifter</a>
+                                </li>
+                                <li><a href="contact.html" class="link-dark rounded text-white">Mina
+                                        kontaktuppgifter</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#workExperience-collapse" aria-expanded="false">
+                            Arbetslivserfarenhet
+                        </button>
+                        <div class="collapse" id="workExperience-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="work2010-now.html" class="link-dark rounded text-white">År 2010 - nu</a>
+                                </li>
+                                <li><a href="work2000-2010.html" class="link-dark rounded text-white">År 2000 - 2010</a>
+                                </li>
+                                <li><a href="workErlierYear.html" class="link-dark rounded text-white">Tidigare år</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#education-collapse" aria-expanded="false">
+                            Utbildningar och kurser
+                        </button>
+                        <div class="collapse" id="education-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Utbildningar</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Kurser</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#gradeCert-collapse" aria-expanded="false">
+                            Betyg eller intyg
+                        </button>
+                        <div class="collapse" id="gradeCert-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Skolbetyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsbetyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsintyg</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#references-collapse" aria-expanded="false">
+                            Referenser
+                        </button>
+                        <div class="collapse" id="references-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Personliga referenser</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Arbetsprover</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed text-white"
+                            data-bs-toggle="collapse" data-bs-target="#access-collapse" aria-expanded="false">
+                            Dokumentåtkomst
+                        </button>
+                        <div class="collapse" id="access-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded text-white">Lås upp betyg</a></li>
+                                <li><a href="#" class="link-dark rounded text-white">Lås upp referenser</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right side content-->
+        <div id="rightSide" class="col-sm">
+            <div class="col-sm">
+                <div class="row gx-0">
+                    <div class="row gx-0">
+                        <div id="infoText" class="col-sm text">
+                            <h3>Arbetslivserfarenhet 2010 till nutid</h3>
+                            <p class="border-top my-1"></p>
+
+                            <dl class="row">
+                                <dt class="col-sm-4">Tidsperiod:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">1 feb 2018 - 31 aug 2020</dd>
+                                <dt class="col-sm-4">Arbetsplats:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Brokinds affär</dd>
+                                <dt class="col-sm-4">Roll:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Ägare och butikschef</dd>
+                            </dl>
+
+                            <p> Brokinds affär är en servicebutik som ligger i samhället Brokind, ca. tre mil söder om
+                                Linköping.
+                                Fokus ligger på att kunna erbjuda fina matvaror och gärna lokalproducerade.
+                                Huvudingrediensen är
+                                ett trevligt bemötande med god service. Butiken ska vara rolig att besöka för små som
+                                stora, boende
+                                och förbipasserande.
+                                <a class="col-sm-8" href="http://www.brokindsaffar.se" target="_blank"><dd>Brokinds affärs webbsida</dd></a>
+                            </p>
+
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#brokindsAffar" role="button"
+                                    aria-expanded="false" aria-controls="brokindsAffar">
+                                    Läs mer om arbetet i Brokinds affär
+                                </a>
+                            </p>
+                            <div class="collapse" id="brokindsAffar">
+                                <div class="card card-body">
+                                    <p><strong>Som ägare och butikschef</strong> är mitt arbete att driva och utveckla Brokinds affär
+                                    utifrån kundernas efterfrågan
+                                    och förväntan. Ett stort fokus ligger på lokalproducerade varor som både är
+                                    miljövänliga och nyttiga.
+                                    Jag tog över butiken (1 feb 2018). Då en butik med falland kundkrets och falland
+                                    omsättning. En butik i ett
+                                    mindre samhälle, är mycket beroende av en trogen kundkrets, än butiker i en större
+                                    stad. Butiken är också
+                                    mer granskad av sina kunder, eftersom kunden får en personlig relation med både
+                                    butiken och personalen.
+                                    Mitt mål är att få trogna kunder och kunder som handlar för att de både gillar
+                                    butiken (lite roligare),
+                                    utbudet (lite bättre) och personalen (lite trevligare). Jag tror att trogenheten är
+                                    något som utvecklas under
+                                    en längre tid, och inget som det går att starta en relation med. Det handlar om att
+                                    se kunden så fort dörren
+                                    öppnas, fånga kundens förväntan, och uppfylla den på ett positivt sätt!
+                                    Det är inte alltid varan som kunden vill ha finns i butiken, men det funkar väldigt
+                                    ofta att ge förslag på
+                                    annat, som oftast blir både bra, och ibland bättre. Det gör sig dock inte av sig
+                                    själv, det handlar om att känna
+                                    av, våga, kunna sina varor samt, älska service och drivas av att en nöjd och glad
+                                    kund är det bästa som finns!
+                                    Även om nu kunden är viktigast, så är mycket annat också viktig. För att butiken ska
+                                    fungera behövs
+                                    också en mycket god relation med alla leverantörer, koll på ekonomi, jobbat med
+                                    utveckling, utökad service
+                                    som; paketutlämning, apotek och utkörning. Jag har förändrat butiken så den upplevs
+                                    större, ökat utbudet,
+                                    ökat mängden varor i butiken, utvecklat kassasystemet, förbättrat belysning, säkrare
+                                    och bättre datanätverk,
+                                    ökat marknadsföringen på sociala medier och mycket mer. Som ett litet exempel på att
+                                    det funkar så har
+                                    omsättningen från 2017 -2019 ökat med 25 % och med en god vinstmarginal.</p>
+                                </div>
+                            </div>
+                            <p class="border-top my-1"></p>
+                            <dl class="row">
+                                <dt class="col-sm-4">Tidsperiod:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">18 maj 2012 - 25 okt 2017</dd>
+                                <dt class="col-sm-4">Arbetsplats:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Campushallen</dd>
+                                <dt class="col-sm-4">Roll:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Markand och IT-ansvarig</dd>
+                            </dl>
+
+                            <p> Campushallen är en träningsanläggning i Linköping. Campushallen har ca. 7 000 tränande
+                                medlemmar och levererar gymträning, gruppträning, bollsporter samt massage och personlig träning.
+                                Ca. 17 st fast anställda och med en omsättning på ca. 18 mkr/år.
+                                <a class="col-sm-8" href="http://www.campushallen.se" target="_blank"><dd>Campushallens webbsida</dd></a>
+                            </p>
+                           
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#campushallen" role="button"
+                                    aria-expanded="false" aria-controls="campushallen">
+                                    Läs mer om arbetet på Campushallen
+                                </a>
+                            </p>
+                            <div class="collapse" id="campushallen">
+                                <div class="card card-body">
+                                    <p><strong>Som marknadsansvarig</strong> var mitt arbete att underhålla och utveckla Campushallens varumärke. Ta fram och
+                                    jobba med marknads- och kommunikationsplan utifrån marknads- och medlemsundersökningar. Utarbeta
+                                    och utveckla strategiska dokument som t.ex. tonalitetpolicy, skrivregler, grafisk manual, policy för sociala
+                                    medier, hemsida etc. Utveckla och ta fram årsbaserade försäljningskampanjer och olika erbjudanden samt
+                                    uppföljning. Exempel på ett par större projektarbeten var att utforma och i verksamheten implementera en
+                                    helt ny hemsida integrerad med Campushallens affärssystem (BRP) samt ta fram ett helt nytt skyltsystem för
+                                    Campushallens lokaler. Praktiska och löpande arbeten var att göra olika original till banderoller, affischer,
+                                    flyers, broschyrer, tidningsannonser, digitala annonser. Underhålla hemsida både gällande innehåll samt
+                                    utveckling och förbättring. Ha koll på och underhålla sociala medier. Skriva och skicka nyhetsbrev månadsvis,
+                                    produktion av filmer för både sociala medier, YouTube och digitala skärmar på Campushallen.</p>
+                                    <p><strong>Som IT-ansvarig</strong> ansvarade jag för Campushallens digitala säkerhet, backuper samt driften av Campushallens
+                                    digitala system. IT-systemet innehöll två lokala servrar. En HP ProLiant med fyra virtuella servrar.
+                                    Sharepointserver, Exchange mailserver, Remote Desktopserver samt en filserver. Den andra, hårdvarumässigt
+                                    enskilda servern (Windows) driftade en databas för affärssystemet (BRP) samt API för hemsidan.
+                                    Utöver servrar var det brandvägg (EdgeRouter Pro), switchar (HP), WiFi med VLAN (Sisco),
+                                    ca. 25 klientdatorer, varav två kassadatorer. I systemet fanns också RFID-läsare som jag konfigurerade
+                                    och köpte in kort till. Jag jobbade också med vårt inpasseringssystem (Integra/Bravida) samt underhåll och
+                                    utveckling av affärssystemet (BRP).</p>
+                                </div>
+                            </div>
+                            <p class="border-top my-1"></p>
+                            <dl class="row">
+                                <dt class="col-sm-4">Tidsperiod:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">8 jan 2008 - 17 maj 2012</dd>
+                                <dt class="col-sm-4">Arbetsplats:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Jenå Reklam AB/Nya printcenter i Linköping AB</dd>
+                                <dt class="col-sm-4">Roll:</dt>
+                                <dd class="col-sm-8 fw-light fst-italic">Projekt- och produktionsledare</dd>
+                            </dl>
+
+                            <p> Jenå Reklam är en producerande reklambyrå med inriktning på bilreklam, skyltproduktion och
+                                digital print. Ett urval av produkter är banderoller, bildekor, ljusskyltar, byggskyltar, affischer, printade
+                                plastskyltar, utställningsmaterial, skyltsystem, fönsterdekor, flyers, visitkort och broschyrer.
+                                <a class="col-sm-8" href="http://www.jenareklam.se" target="_blank"><dd>Jenå Reklams webbsida</dd></a>
+                            </p>
+                            
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#jenaReklam" role="button"
+                                    aria-expanded="false" aria-controls="jenaReklam">
+                                    Läs mer om arbetet på Campushallen
+                                </a>
+                            </p>
+                            <div class="collapse" id="jenaReklam">
+                                <div class="card card-body">
+                                    <p>På Jenå verkade jag externt som säljare och problemlösare till kunder. Internt handlade det om att planera
+                                        produktioner, fakturera, offerera, köpa in material, boka upp personal till monteringsarbeten, berabeta
+                                        original inför produktion och översätta kundens önskemål till arbetsuppgifter i produktionen.
+                                        Jag gjorde också en del originalarbeten och hela konceptarbeten åt kunder. Några exempel är Göta Kanals
+                                        skyltsystem som används vid slussar, layout och produktion av Blomstertorgets visuella kommunikation i
+                                        den (då) nya butiken samt Verisure/Securitas transportabla monterkoncept och dess hantering (logistik).
+                                        Jag gjorde också kundbesök, monterade skyltar och folie, jobbade med färghantering (rippar) till printrar,
+                                        service av maskiner, provade och köpte in nya material och utvecklade produktsortimentet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
