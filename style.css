@@ -12,6 +12,14 @@
     border-radius: 50%;
     border: solid 2px white;
 }
+#profile{
+    display: flex;
+    justify-content: center;
+}
+
+#sideBarMeny{
+    text-align: center;
+}
 
 #profileContainer{
     display: flex;
@@ -103,6 +111,10 @@ display: none;
 
     #sideBar{
         max-width: 280px;
+    }
+
+    #sideBarMeny{
+        text-align:unset;
     }
 
     .card-img-overlay{
