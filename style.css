@@ -47,6 +47,14 @@ h5{
     max-width: 188px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+#pagesBtn{
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.repo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .card{
     border-radius: 0;
